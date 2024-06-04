@@ -1,6 +1,6 @@
 
-#ifndef __OV5640_H__
-#define __OV5640_H__
+#ifndef __BF20A6_H__
+#define __BF20A6_H__
 
 #include "sensor.h"
 
@@ -13,7 +13,7 @@
  *     0:       Can't detect this sensor
  *     Nonzero: This sensor has been detected
  */
-int ov5640_detect(int slv_addr, sensor_id_t *id);
+int bf20a6_detect(int slv_addr, sensor_id_t *id);
 
 /**
  * @brief initialize sensor function pointers
@@ -22,6 +22,6 @@ int ov5640_detect(int slv_addr, sensor_id_t *id);
  * @return
  *      Always 0
  */
-int ov5640_init(sensor_t *sensor);
+int bf20a6_init(sensor_t *sensor);
 
-#endif // __OV5640_H__
+#endif // __BF20A6_H__
